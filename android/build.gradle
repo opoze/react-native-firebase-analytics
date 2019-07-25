@@ -19,7 +19,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.firebase:firebase-core:+'
-    compile 'com.google.firebase:firebase-analytics:+'
+    compile "com.google.firebase:firebase-core:${safeExtGet('googlePlayServicesVersion', '+')}"
+    compile "com.google.firebase:firebase-analytics:${safeExtGet('googlePlayServicesVersion', '+')}"
 }
 
